@@ -1,11 +1,11 @@
 # COMUNIDAD MAKER 
 
-== WORLD TECH MAKERS
+==WORLD TECH MAKERS
 
 En 2017 se inicio el tercer bootcamp presencial en Medellin, en esta ocación de Front-end JavasCript
 el cual se lleva a cabo desde el 27 de julio hasta --- agosto en el Parque Biblioteca Belén.
 
-== INTEGRANTES
+==INTEGRANTES
 
 * LEIDY JOHANA GALVAN
 * LINA MARIA MONTAÑO RAMIREZ
