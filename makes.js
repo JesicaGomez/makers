@@ -99,7 +99,19 @@ var carousel = (function() {
     carouselCloseButtonElement.addEventListener('click', hideCarousel);
     carouselModalButtonPrevElement.addEventListener('click', prevSlide);
     carouselModalButtonNextElement.addEventListener('click', nextSlide);
+    carouselModalContentElement.addEventListener('click', nextSlide);
+    document.addEventListener('keydown', function(e){
+      if (e.keyCode === 37) {
+        nextSlide();}
+      else if (e.keyCode === 39){
+        prevSlide();}
+      else if (e.keyCode === 27){
+        hideCarousel();}
+    })
+
   };
+
+
 
   return {
     init: init

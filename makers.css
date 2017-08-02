@@ -1,41 +1,49 @@
 * {
   margin: 0;
   padding: 0;}
+
  /*encabezado*/
 .image-ppal{
 	position: fixed;
-    z-index: 0;
+  z-index: 0;
 	width: 100%;}
+
 .content-ppal{
-    /*para traer al primer plano z*/
+  /*para traer al primer plano z*/
 	position: absolute;
 	z-index: 1;
 	text-align: center;
 	margin-top: 400px;
 	background-color: #FFF;}
+
 .div-title{
 	text-align: center;
 	flex: row;
 	margin: -120px 0px 0px 0px;}
+
 .logo-title{
 	opacity: 0.4;
 	margin-bottom: -20px;
-	width: 100px}
+	width: 100px;}
+
 .tex-title{
 	display: inline-block;
-    text-align: center;
-    color: #FFF;
-    opacity: 0.46;
-    font-size: 100;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.46;
+  font-size: 100;
 	margin:0 auto;}
+
 /*fin de encabezado*/
 /*Bootcamp Front-end JavasCript*/
+
 .section-person{
 
 	height: 500px;
-    overflow-y: scroll;}
+  overflow-y: scroll;}
 
 /*carouse*/
+
 .carousel-grid {
   display: flex;
   flex-wrap: wrap;
@@ -54,18 +62,22 @@
   box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 }
 
-.carousel-item img {
+.carousel-item img.img-grid{
   display: block;
   width: 100%;
   user-select: none;
 }
 
-.carousel-item figcaption {
+.carousel-item img.img-modal{display: none}
+
+.carousel-item figcaption.grid {
   height: 40px;
   padding: 10px 0;
   font-size: 14px;
   background: white;
 }
+
+.carousel-item figcaption.modal{display: none}
 
 .carousel-modal {
   display: flex;
@@ -139,7 +151,9 @@
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
-.carousel-modal-content .carousel-item figcaption {
+.carousel-modal-content .carousel-item figcaption.grid{display: none}
+
+.carousel-modal-content .carousel-item figcaption{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -149,6 +163,15 @@
   color: black;
   padding-left: 10px;
   padding-right: 10px;
+  display: block;
+  
+}
+
+.carousel-modal-content .carousel-item img.img-grid{display: none}
+
+.carousel-modal-content .carousel-item img.img-modal{
+  display: block;
+  width: 100%;
 }
 
 /* Utils */
